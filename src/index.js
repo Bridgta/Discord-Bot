@@ -7,4 +7,8 @@ client.once("ready", () => {
     console.log("Ready!");
 });
 
+client.on("message", (msg) => {
+    console.log(msg);
+});
+
 client.login(process.env.BOT_TOKEN);
